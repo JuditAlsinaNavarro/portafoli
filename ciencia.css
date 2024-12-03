@@ -1,0 +1,93 @@
+/* poso la imatge de fons i ajustos generals */
+body {
+    background-image: url(https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: 100% 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* titol principal */
+h2{
+    background-color: rgba(219, 167, 9, 0.454);
+    border-radius: 5px;
+    text-shadow: rgba(0, 0, 0, 0.868);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+}
+
+/* menu flexbox de dalt */
+.contenidor{
+    display: flex;
+    justify-content: space-around;  
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.648);
+    margin: 20px;
+    /* aquí poso que s'enganxi just quan el títol superior el toca */
+    position: sticky;
+    top:  0px;
+    z-index: +1;
+}
+
+/* defineixo els elements del grid */
+.titol {grid-area: titol;}
+.flexbox {grid-area: flexbox;}
+.seccio1 {grid-area: seccio1;}
+.galeria1 {grid-area: galeria1;}
+.seccio2 {grid-area: seccio2;}
+.seccio3 {grid-area: seccio3;}
+
+/* distribueixo l'espai de cada element del grid*/
+.estructura {
+    margin: 20px;
+    display: grid;
+    grid-template-areas: 
+    "titol titol"
+    "flexbox flexbox"
+    "seccio1 seccio1"
+    "galeria1 galeria1"
+    "seccio2 seccio2"
+    "seccio3 seccio3";
+}
+
+/* configuro la galeria i els seus elements*/
+#galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: white;
+    margin: 20px;
+}
+
+.galeria div {
+    margin: 40px;
+}
+
+/* edito el títol "general" i el paràgraf de sota */
+h3{
+    color: white;
+    text-align: center;
+}
+/* text general de la web */
+p{
+    color: white;
+    text-align: center;
+}
+
+/* edito cadascuna de les seccions */
+.seccio1 {
+    background-color: rgba(0, 0, 0, 0.511);
+    margin: 20px;
+}
+
+.seccio2 {
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+.seccio3 {
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.516);
+}

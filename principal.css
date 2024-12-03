@@ -1,0 +1,128 @@
+/* imatge de fons i mida d'aquesta */
+body {
+    background-image: url("https://images.alphacoders.com/805/thumb-1920-805180.jpg");
+    background-size: 100% 110%;
+
+}
+
+/* títol principal */
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgba(139, 0, 0, 0.573);
+    border-radius: 3px;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+/* menú flexbox de dalt */
+.contenidor{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.16);
+    margin: 20px;
+    text-shadow: rgba(0, 0, 0, 0.518);
+}
+
+/* subtítol "Quin és el propòsit d'aquesta web?" */
+h3{
+    color: white;
+    margin: 20px;
+    background-color:rgba(165, 42, 42, 0.395);
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* text sota d'aquest subtítol */
+p{
+    margin: 20px;
+    color: white;
+}
+
+/* configuro la galeria i els seus elements*/
+#galeria {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: white;
+}
+
+.galeria div {
+    margin: 3px;
+    padding: 5px;
+}
+
+/* edito l'apartat de "ciència, programació, art i disseny i música" */
+h5{
+    color:brown;
+    margin: 20px;
+    font-size: larger;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.272);
+}
+/* edito la part del peu de pàgina amb la informació de contacte */
+.contacte{
+    background-color: rgba(255, 255, 255, 0.162);
+    margin: 20px;
+    color: white;
+}
+/* tamany del h6 */
+h6{
+    font-size: larger;
+}
+
+/* posiciono el logo de l'institut guissona */
+.logo {
+    position:absolute;
+    bottom: 35px;
+    right: 48px;
+}
+
+/* configuro les estrelles gif per a que siguin en mode flexbox i quedin ben distribuïdes */
+.gif1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+/* configuro la fletxa gif de la dreta */
+.gif2 {
+    position: absolute;
+    top: 250px;
+    left: 1260px;
+}
+
+/* poso la divsió de tots els temes en relative */
+.temes {
+    position:relative;
+    color: white;
+    font-size: larger;
+}
+/* posiciono cadascun dels títols */
+#ciencia {
+    position: absolute;
+    top: 15px;
+    left: 190px;
+}
+
+#programacio {
+    position: absolute;
+    top: 15px;
+    left: 500px;
+}
+
+#art {
+    position: absolute;
+    top: 15px;
+    left: 830px;
+}
+
+#musica {
+    position: absolute;
+    top: 15px;
+    left: 1180px;
+}

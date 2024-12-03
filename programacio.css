@@ -1,0 +1,146 @@
+/* ajustos generals de la web, com fons de pantalla */
+body {
+    background-image: url(https://images8.alphacoders.com/559/thumb-1920-559128.jpg);
+    background-size: 100% 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* menu flexbox de dalt */
+.contenidor{
+    display: flex;
+    justify-content: space-around;  
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.648);
+    margin: 20px;
+    /* aquí poso que s'enganxi just quan el títol superior el toca */
+    position: sticky;
+    top:  0px;
+    z-index: +1;
+}
+/* títol principal */
+h2{
+    background-color: rgba(0, 0, 0, 0.632);
+    border-radius: 5px;
+    text-shadow: rgba(0, 0, 0, 0.868);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+}
+/* subtítols */
+h3{
+    color: white;
+    margin: 20px;
+}
+
+/* paràgraf sota el títol "Per què vull programar?" */
+p{
+    color: white;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+/* defineixo els elements pel grid de l'escrtuctura */
+
+.titol {grid-area: titol;}
+.flexbox {grid-area: flexbox;}
+.seccio1 {grid-area: seccio1;}
+.imatge1 {grid-area: imatge1;}
+.seccio2 {grid-area: seccio2;}
+.imatge2 {grid-area: imatge2;}
+.seccio3 {grid-area: seccio3;}
+.imatge3 {grid-area: imatge3;}
+.seccio4 {grid-area: seccio4;}
+.imatge4 {grid-area: imatge4;}
+
+/* defineixo les àrees que ocuparan cadascuna d'aquestes seccions */
+.estructura{
+    display: grid;
+    grid-template-areas: 
+    "titol titol"
+    "flexbox flexbox"
+    "seccio1 imatge1"
+    "imatge2 seccio2"
+    "seccio3 imatge3"
+    "imatge4 seccio4";
+}
+
+/* poso marges a les fotos */
+.imatge1{
+    margin: 20px;
+}
+
+.imatge2 {
+    margin: 20px;
+}
+
+.imatge3 {
+    margin: 20px;
+}
+
+.imatge4{
+    margin: 20px;
+}
+/* poso el fondo de color i transparent a les seccions */
+.seccio1 {
+    background-color: rgba(255, 255, 255, 0.178);
+    margin: 20px;
+}
+.seccio2 {
+    background-color: rgba(255, 255, 255, 0.178);
+    margin: 20px;
+}
+
+.seccio3 {
+    background-color: rgba(255, 255, 255, 0.178);
+    margin: 20px;
+}
+.seccio4{
+    background-color: rgba(255, 255, 255, 0.178);
+    margin: 20px;
+}
+
+/* poso que el títol principal i el flexbox s'enganxin a dalt amb sticky */
+.titol {
+    position: sticky;
+    top: 0;
+}
+/* poso flexbox per a que quedi enganxat */
+.flexbox {
+    position: sticky;
+    top: 50px;
+}
+/* edito la taula del HTML i la del CSS */
+/* aquesta es la del HTML */
+#taula1 {
+    color: white;
+    background-color: rgba(255, 175, 83, 0.416);
+}
+/* aquesta es la del CSS */
+#taula2 {
+    color: white;
+    background-color: rgba(83, 215, 255, 0.416);
+    text-align: center;
+
+}
+
+/* ara aquí posiciono totes les imatges extra que hi ha a la web (logos de l'html, css, python, etc) */
+.foto1 {
+    position: absolute;
+    top: 440px;
+    left: 40px;
+}
+
+.foto2{
+    position: absolute;
+    top: 440px;
+    left: 350px;
+}
+
+.foto3{
+    position: absolute;
+    top: 1870px;
+    right: 320px;
+}

@@ -1,0 +1,142 @@
+/* característiques generals de la web i fons de pantalla */
+body{
+    background-image: url(https://as2.ftcdn.net/v2/jpg/03/10/12/79/1000_F_310127955_eexXGf330VwFZBhaTMiUN0jtkKEfieJD.jpg);
+    size: 100% 100%;
+}
+/* títol principal */
+h2 {
+    background-color: rgba(75, 51, 15, 0.546);
+    border-radius: 5px;
+    text-shadow: rgba(0, 0, 0, 0.868);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+}
+/* paràgrafs */
+p {
+    margin: 20px;
+}
+/* títols com "Arquitectura" */
+h3 {
+    color: rgba(70, 40, 10, 0.861);
+    margin: 20px;
+}
+/* títols menys importants */
+h4 {
+    color:rgba(70, 40, 10, 0.861);
+    font-size: larger;
+}
+/* flexbox de dalt de tot, el menú */
+.contenidor {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+    background-color: rgba(168, 168, 168, 0.742);
+    margin: 20px;
+    position: sticky;
+   }
+
+/* defineixo els elements del grid */
+.titol {grid-area: titol;}
+.arquitectura {grid-area: arquitectura;}
+.gotica {grid-area: gotica;}
+.barroca {grid-area: barroca;}
+.flexbox {grid-area: flexbox;}
+.renaix {grid-area: renaix}
+.bizantina {grid-area: bizantina;}
+.escultura {grid-area: escultura;}
+.foto1 {grid-area: foto1;}
+.foto2 {grid-area: foto2;}
+.pintura {grid-area: pintura;}
+.galeria {grid-area: galeria;}
+
+/* distribueixo l'espai de cada element del grid */
+.estructura{
+    margin: 20px;
+    display: grid;
+    grid-template-areas:
+    "titol titol"
+    "flexbox flexbox"
+    "arquitectura arquitectura"
+    "gotica barroca"
+    "renaix bizantina"
+    "escultura escultura"
+    "foto1 foto2"
+    "pintura pintura"
+    "galeria galeria";
+}
+
+/* edito característiques dels apartats */
+
+.arquitectura {
+    background-color: rgba(255, 255, 255, 0.53);
+}
+
+.gotica {
+    background-color: rgba(255, 255, 255, 0.53);
+    text-align: center;
+}
+
+.barroca {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.53);
+}
+
+.renaix {
+    background-color: rgba(255, 255, 255, 0.53);
+    text-align: center;
+}
+
+.bizantina {
+    background-color: rgba(255, 255, 255, 0.53);
+    text-align: center;
+}
+
+.escultura {
+    background-color: rgba(255, 255, 255, 0.53);
+}
+
+.foto1 {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.53);
+}
+
+.foto2 {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.53);
+}
+
+.pintura {
+    background-color: rgba(255, 255, 255, 0.53);
+}
+
+/* flexbox de la galeria */
+.galeria {
+    display: flex;
+    justify-content: center;
+    padding:5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.53);
+}
+
+/* posiciono els gifs del costat del títol principal */
+.gif {
+    position: absolute;
+    top: 95px;
+    left: 100px;
+}
+
+.gif2 {
+    position: absolute;
+    top: 95px;
+    right: 100px;
+}
+
+/* poso el flexbox perquè quedi fixe dalt quan baixi cap avall (amb sticky) però deixo que no s'empegui totalment a dalt de tot sinó que deixi un espai */
+.flexbox {
+    position: sticky;
+    top: 0;
+}

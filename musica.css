@@ -1,0 +1,54 @@
+/* configuració general de la web, amb la foto de fons */
+body {
+    background-image: url(https://images.pexels.com/photos/534283/pexels-photo-534283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: 100% 100%;
+}
+/* títol principal */
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.564);
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    text-shadow: white;
+}
+/* menu flexbox de dalt */
+.contenidor {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+    background-color: rgba(242, 249, 113, 0.742);
+    margin: 20px;
+   }
+/* títol "quins estils de música m'agraden?" */
+h3 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+/* edito la llista de gèneres de música */
+
+#llista {
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
+/* edito als paràgrafs */
+p{
+    color:white;
+    margin: 20px;
+    font-size: 20px;
+}
+
+/* video de Tchaikovsky */
+.classica {
+    margin: 20px;
+}
+
+/* enllaços de baix de tot */
+.altresgeneres {
+    margin: 20px;
+}

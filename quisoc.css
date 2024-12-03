@@ -1,0 +1,83 @@
+/* configuració general de la web i fons de pantalla */
+body {
+    background-image: url(https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1200);
+    background-size: 100% 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* menu flexbox de dalt */
+.contenidor{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+    background-color: rgba(67, 14, 14, 0.749);
+    margin: 20px;
+    text-shadow: rgba(0, 0, 0, 0.518);
+    /* aquí poso que s'enganxi just quan el títol superior el toca */
+    position: sticky;
+    top:  46px;
+    z-index: +1;
+}
+/* titol principal */
+h2{
+    background-color: rgba(100, 59, 12, 0.854);
+    border-radius: 5px;
+    text-shadow: rgba(0, 0, 0, 0.868);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+    /* aquí poso que s'enganxi dalt quan toqui dalt de tot */
+    position: sticky;
+    top: 0 ;
+    z-index: +1;
+}
+/* text principal */
+p{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.655);
+    margin: 20px;
+    /* poso l'sticky perquè no quedi el menú flexbox per sobre d'aquest paràgraf. */
+    position: sticky;
+    top: 84px ;
+}
+/* "Alguns gustos generals" */
+h3{
+    color: white;
+    background-color: rgb(79, 19, 19);
+    border-radius: 30px;
+    margin-left: 20px;
+    /* aquí el que faig és que em quedi el color vermell del títol només una llargada determinada a l'esquerra, no tota la web sencera */
+    margin-right: 1140px;
+    font-size: 24px;
+}
+/* configuro la taula d'imatges (galeria) */
+#taula{
+    margin: 20px;
+}
+
+/* configuro la llista d'aficions */
+#llista {
+    margin: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+/* edito la 2na taula */
+#taula2 {
+    margin: 20px;
+}
+
+/* posiciono els gifs de sobre les imatges */
+.gif1 {
+    position: absolute;
+    bottom: 90px;
+    right: 68px;
+}
+
+.gif2 {
+    position: absolute;
+    bottom: 110px;
+    right: 480px;
+}
